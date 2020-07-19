@@ -2364,13 +2364,16 @@ class EcowittClient(Consumer):
             'wh65batt': 'wh65_battery',
             'pm25_ch1': 'pm2_5',
             'pm25batt1': 'pm25_battery',
+            'lightning_num': 'lightning_count',
+            'wh57batt': 'wh57_battery',
         }
 
         IGNORED_LABELS = [
             'PASSKEY', 'dateutc', 'stationtype', 'model', 'freq', 'baromrelin',
             'maxdailygust', 'eventrainin', 'hourlyrainin', 'dailyrainin',
             'weeklyrainin', 'monthlyrainin', 'yearlyrainin',
-            'pm25_avg_24h_ch1', 'winddir_avg10m', 'windspdmph_avg10m',
+            'pm25_avg_24h_ch1', 'winddir_avg10m', 'windspdmph_avg10m','lightning',
+            'lightning_time'
         ]
 
         def __init__(self):
